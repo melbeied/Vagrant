@@ -14,22 +14,11 @@ Vagrant.configure("2") do |config|
     v.memory = 4096
   end
   config.vm.synced_folder '.', '/vagrant', disabled: true
-
-  #config.vm.provision "shell", inline: $script
+  config.vm.provision "shell", path : "./ext/ansible.sh"
   
   config.vm.provision "shell", inline: <<-SHELL
-	setenforce 0
-	sed -i 's/SELINUX=\(enforcing\|permissive\)/SELINUX=disabled/g' /etc/selinux/config
-	#sudo yum -y update
-	#sudo yum -y install nano
-     	
-	echo ******************************* install Ansible ****************************************
-	#sudo yum -y install epel-repo
-	#sudo yum -y update
-	#sudo yum -y install ansible
-	#ansible --version
-     	
-	echo ******************************* install et provisioner Docker CE **********************
+	
+    echo ******************************* install et provisioner Docker CE **********************
 	sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 	sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 	sudo yum-config-manager --enable docker-ce-edge
