@@ -1,8 +1,5 @@
-#!/bin/sh
-    ### disable seLinux 	
-	setenforce 0
-	sed -i 's/SELINUX=\(enforcing\|permissive\)/SELINUX=disabled/g' /etc/selinux/config
-	
+#!/usr/bin/env bash
+    
 	## update ansible repo configuration
 	sudo yum -y update
 	yum install -y software-properties-common
