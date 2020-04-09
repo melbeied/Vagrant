@@ -5,10 +5,12 @@
 Monter une machine virtuelle avec OS Linuxn pré-provisionnée avec Ansible Ansible et Docker.
 
 ## Vagrant
+
 Vagrant est un outil permettant la construction et la gestion des machines virtuelles, c'est  un moyen efficient pour automatiser le montage des environnements spécifiques à l'utilisation d'un ou plusieurs developpeurs, testeurs, administrateurs, etc.
 
 le fichier central de vagrant est Vagrantfile qui support une synthaxe Ruby.
-## Pré-requis
+
+## Prérequis
 
 Dans l'order :
 - VirtualBos ou Vmware installé
@@ -34,7 +36,9 @@ Sur cet exemple plusieurs variables environnementaux sont externalisés sur le f
                 user: vagrant
                 ansible-mode: yes    # <<==== no for default mode : shell
 ```
-çela augmente l'intérêt de réutilisation du même travail avec moins de modification utilisateur 
+
+çela augmente l'intérêt à la réutilisation du même travail avec moins de modifications 
+utilisateur 
 
 ## Exécution
 
