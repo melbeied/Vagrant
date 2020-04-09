@@ -79,7 +79,6 @@ Une fois vous avez le prompt sur le home de votre utilisateur vagrant, passer le
     $ docker --version
  ```
     ou
-
 ```shell  
     $ docker info
 ```
