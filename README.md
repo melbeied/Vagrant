@@ -7,10 +7,16 @@ Monter une machine virtuelle avec OS Linuxn pré-provisionnée avec Ansible Ansi
 Vagrant est un outil permettant la construction et la gestion des machines virtuelles, c'est  un moyen efficient pour automatiser le montage des environnements spécifiques à l'utilisation d'un ou plusieurs developpeurs, testeurs, administrateurs, etc.
 
 le fichier central de vagrant est Vagrantfile qui support une synthaxe Ruby.
+## Pré-requis
+
+Dans l'order :
+- VirtualBos ou Vmware installé
+- Vagrant
 
 ## Coonfiguration
 
 Sur cet exemple plusieurs variables environnementaux sont externalisés sur le fichier vargant.yml, par exemple :
+
 - nom de la machine
 - l'adresse ip à attribuer dans le réseau local
 - nom de la box
@@ -53,10 +59,10 @@ Une fois vous avez le prompt, passer les deux commandes suivantes :
 - Pour vérifier la version installé de Docker
 
 ```shell 
- $ docker --version
+    $ docker --version
  ```
-    or
+       or
 
 ```shell  
- $ docker info
+    $ docker info
 ```
