@@ -18,7 +18,7 @@ Sur cet exemple plusieurs variables environnementaux sont externalisés sur le f
     * en mode shell : en se basant sur ext/ansible.sh
     * en mode ansible : en se basant sur le fichier : ext/playbook.yml
 
-            ```
+```YAML
                 ip_address: 192.168.0.100
                 box_name : centos/7
                 vm_name: inst1-P3-centos7
@@ -26,45 +26,37 @@ Sur cet exemple plusieurs variables environnementaux sont externalisés sur le f
                 host_name: volubilis
                 user: vagrant
                 ansible-mode: yes    # <<==== no for default mose : shell
-            ```
+```
 çela augmente l'intérêt de réutilisation du même travail avec moins de modification utilisateur 
 
 ## Exécution
 
-    ```shell 
+```shell 
     $ vagrant up --provision
-    ```
+```
 
 ## Test
 
 Accés à la machine en ssh
 
-    ```shell 
-
+```shell 
     $ vagrant ssh
-
-    ```
+```
 Une fois vous avez le prompt, passer les deux commandes suivantes :
 
 - Pour vérifier la version installée d'Ansible
 
-    ```shell 
-    
+```shell 
     $ ansible --version
-
-    ```
+```
 
 - Pour vérifier la version installé de Docker
 
 ```shell 
- 
  $ docker --version
- 
  ```
     or
 
-```shell 
- 
+```shell  
  $ docker info
- 
 ```
