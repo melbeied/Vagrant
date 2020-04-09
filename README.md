@@ -61,8 +61,8 @@ Une fois vous avez le prompt, passer les deux commandes suivantes :
 ```shell 
     $ docker --version
  ```
-       or
-
+      ou
+      
 ```shell  
     $ docker info
 ```
