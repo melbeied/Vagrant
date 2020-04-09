@@ -14,7 +14,7 @@ Sur cet exemple plusieurs variables environnementaux sont externalisés sur le f
 - nom de la machine
 - l'adresse ip à attribuer dans le réseau local
 - nom de la box
-- mode d'installtion de docker : (cela par par le paramétre )
+- mode d'installation de docker : (cela par par le paramétre )
     * en mode shell : en se basant sur ext/ansible.sh
     * en mode ansible : en se basant sur le fichier : ext/playbook.yml
 
@@ -29,39 +29,34 @@ Sur cet exemple plusieurs variables environnementaux sont externalisés sur le f
             ```
 çela augmente l'intérêt de réutilisation du même travail avec moins de modification utilisateur 
 
-
 ## Exécution
 
-```shell
- 
- $ vagrant up --provision
- 
-```
+    ```shell 
+    $ vagrant up --provision
+    ```
 
 ## Test
 
 Accés à la machine en ssh
 
-```shell
- 
- $ vagrant ssh
- 
-```
+    ```shell 
+    $ vagrant ssh
+    ```
 Une fois vous avez le prompt, passer les deux commandes suivantes :
 
+- Pour vérifier la version installée d'Ansible
 
-- Pour vérifier la version insrtallé d'Ansible
+    ```shell 
+    $ ansible --version
+    ```
 
-```shell
- 
- $ ansible --version
- 
-```
 - Pour vérifier la version installé de Docker
 
-```shell
- 
+```shell 
  $ docker --version
+ ```
+ or
+ 
+```shell 
  $ docker info
-
 ```
