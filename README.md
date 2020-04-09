@@ -40,23 +40,31 @@ Sur cet exemple plusieurs variables environnementaux sont externalisés sur le f
 Accés à la machine en ssh
 
     ```shell 
+
     $ vagrant ssh
+
     ```
 Une fois vous avez le prompt, passer les deux commandes suivantes :
 
 - Pour vérifier la version installée d'Ansible
 
     ```shell 
+    
     $ ansible --version
+
     ```
 
 - Pour vérifier la version installé de Docker
 
 ```shell 
+ 
  $ docker --version
+ 
  ```
     or
 
 ```shell 
+ 
  $ docker info
+ 
 ```
