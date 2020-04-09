@@ -76,9 +76,6 @@ Une fois vous avez le prompt sur le home de votre utilisateur vagrant, passer le
 - Pour vérifier la version installée de Docker
 
 ```shell 
-    $ docker --version
- ```
-    ou
-```shell  
+    $ docker --version  
     $ docker info
 ```
