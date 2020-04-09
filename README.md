@@ -2,13 +2,14 @@
 
 ## But
 
-Monter une machine virtuelle avec OS Linuxn pré-provisionnée avec Ansible Ansible et Docker.
+Monter une machine 
+ avec OS Linuxn pré-provisionnée avec Ansible Ansible et Docker.
 
 ## Vagrant
 
-Vagrant est un outil permettant la construction et la gestion des machines virtuelles, c'est  un moyen efficient pour automatiser le montage des environnements spécifiques à l'utilisation d'un ou plusieurs developpeurs, testeurs, administrateurs, etc.
+Vagrant est un outil permettant la construction et la gestion des machines virtuelles, c'est  un moyen efficient pour faciliter le montage des environnements spécifiques ( une ou plusieurs vm ) à l'utilisation d'un ou plusieurs personnes : developpeurs, testeurs, administrateurs, etc.
 
-le fichier central de vagrant est Vagrantfile qui support une synthaxe Ruby.
+le fichier central de vagrant est Vagrantfile qui support une synthaxe Ruby; 
 
 ## Prérequis
 
