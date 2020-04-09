@@ -27,9 +27,12 @@ sudo yum install -y docker-ce
 
 sudo systemctl start docker || sudo systemctl status docker.service
 
+# 3. add defaut user to docker group in order to use docker without sudo
+sudo usermod -aG docker $USER
+
 # 3. Verify that docker is installed correctly by running the hello-world image.
 
-sudo docker run --rm hello-world
+docker run --rm hello-world
 
 # Configure Docker to start on boot
 sudo systemctl enable docker
