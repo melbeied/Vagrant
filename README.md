@@ -43,7 +43,7 @@ Sur cet exemple plusieurs variables environnementaux sont externalisés sur le f
 
 ## Test
 
-Accés à la machine en ssh
+Acceder à la machine en ssh
 
 ```shell 
     $ vagrant ssh
@@ -62,7 +62,7 @@ Une fois vous avez le prompt, passer les deux commandes suivantes :
     $ docker --version
  ```
       ou
-      
+
 ```shell  
     $ docker info
 ```
