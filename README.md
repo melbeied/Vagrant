@@ -1,4 +1,5 @@
 # Monter une VM Linux avec provisionning Ansible et Docker
+
 ## But
 
 Monter une machine virtuelle avec OS Linuxn pré-provisionnée avec Ansible Ansible et Docker.
@@ -11,17 +12,17 @@ le fichier central de vagrant est Vagrantfile qui support une synthaxe Ruby.
 
 Dans l'order :
 - VirtualBos ou Vmware installé
-- Vagrant
+- Vagrant installé
 
-## Coonfiguration
+## Configuration
 
-Sur cet exemple plusieurs variables environnementaux sont externalisés sur le fichier vargant.yml, par exemple :
+Sur cet exemple plusieurs variables environnementaux sont externalisés sur le fichier vargant.yml, de ces variables il y'a par exemple :
 
 - nom de la machine
 - l'adresse ip à attribuer dans le réseau local
 - nom de la box
-- mode d'installation de docker : (cela par par le paramétre )
-    * en mode shell : en se basant sur ext/ansible.sh
+- mode d'installation de docker : (cela par le paramétre "ansible-mode")
+    * en mode shell : en se basant sur le fichier ext/ansible.sh
     * en mode ansible : en se basant sur le fichier : ext/playbook.yml
 
 ```YAML
@@ -31,7 +32,7 @@ Sur cet exemple plusieurs variables environnementaux sont externalisés sur le f
                 server_domain: projet3.dev
                 host_name: volubilis
                 user: vagrant
-                ansible-mode: yes    # <<==== no for default mose : shell
+                ansible-mode: yes    # <<==== no for default mode : shell
 ```
 çela augmente l'intérêt de réutilisation du même travail avec moins de modification utilisateur 
 
@@ -43,20 +44,20 @@ Sur cet exemple plusieurs variables environnementaux sont externalisés sur le f
 
 ## Test
 
-Acceder à la machine en ssh
+Accéder à la machine en ssh
 
 ```shell 
     $ vagrant ssh
 ```
-Une fois vous avez le prompt, passer les deux commandes suivantes :
+Une fois vous avez le prompt sur le home de votre utilisateur vagrant, passer les deux commandes suivantes :
 
-- Pour vérifier la version installée d'Ansible
+- Pour vérifier la version installée de Ansible
 
 ```shell 
     $ ansible --version
 ```
 
-- Pour vérifier la version installé de Docker
+- Pour vérifier la version installée de Docker
 
 ```shell 
     $ docker --version
