@@ -9,14 +9,23 @@ Monter une machine
 
 Vagrant est un outil permettant la construction et la gestion des machines virtuelles, c'est  un moyen efficient pour faciliter le montage des environnements spécifiques ( une ou plusieurs vm ) à l'utilisation d'un ou plusieurs personnes : developpeurs, testeurs, administrateurs, etc.
 
-le fichier central de vagrant est Vagrantfile qui support une synthaxe Ruby; 
+le fichier central de vagrant est Vagrantfile qui support une synthaxe Ruby.
 
 ## Prérequis
 
 Dans l'order :
 - VirtualBos ou Vmware installé
 - Vagrant installé
-
+## Commencer
+Lancer la commande suivante :
+```shel
+    # récuperer le repo Vagrant
+    $ git clone https://github.com/melbeied/Vagrant.git
+```
+Se positionner sur le la racine
+```shel
+    $ cd Vagrant
+```
 ## Configuration
 
 Sur cet exemple plusieurs variables environnementaux sont externalisés sur le fichier vargant.yml, de ces variables il y'a par exemple :
@@ -35,8 +44,10 @@ Sur cet exemple plusieurs variables environnementaux sont externalisés sur le f
                 server_domain: projet3.dev
                 host_name: volubilis
                 user: vagrant
-                ansible-mode: yes    # <<==== no for default mode : shell
+                ansible-mode: yes    # or no for default shell mode
 ```
+ansible-mode : le mode ansible (yes) est préconisé vu l'interet qu'offre ansible comme outil de gestion de configuration et provision de la machine à construire.
+
 
 çela augmente l'intérêt à la réutilisation du même travail avec moins de modifications 
 utilisateur 
