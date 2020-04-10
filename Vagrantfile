@@ -4,8 +4,8 @@ settings = YAML.load_file('vagrant.yml')
 Vagrant.configure("2") do |config|
   config.vm.define settings['vm_name']
   config.vm.box = settings['box_name']
-  config.vm.network "forwarded_port", guest: 80, host: 5555
-  config.vm.network "forwarded_port", guest: 22, host: 2220
+  config.vm.network "forwarded_port", guest: 80, host: 8080
+  config.vm.network "forwarded_port", guest: 22, host: 2222
 
   config.vm.network :private_network, ip: settings['ip_address']
   config.vm.synced_folder '.', '/vagrant', owner: "vagrant", group: "vagrant", disabled: false

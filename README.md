@@ -7,7 +7,7 @@ Monter une machine
 
 ## Vagrant
 
-Vagrant est un outil permettant la construction et la gestion des machines virtuelles, c'est  un moyen efficient pour faciliter le montage des environnements spécifiques ( une ou plusieurs vm ) à l'utilisation d'un ou plusieurs personnes : developpeurs, testeurs, administrateurs, etc.
+Vagrant est un outil permettant la construction et la gestion des machines virtuelles, c'est  un moyen efficient pour faciliter la reproduction des environnements de travail complet ( une ou plusieurs vm ) ces environnements sont utilisés par une ou plusieurs personnes, telque des developpeurs, testeurs, administrateurs, etc.
 
 le fichier central de vagrant est Vagrantfile qui support une synthaxe Ruby.
 
